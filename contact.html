@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Grandehotel for reservations, inquiries, and special requests. We are here to make your stay extraordinary.">
+  <title>Contact Us — GRANDEHOTEL</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏨</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header header--dark-page">
+    <div class="container header__inner">
+      <a href="index.html" class="header__brand">
+        <span class="header__brand-icon">G</span>
+        GRANDEHOTEL
+      </a>
+
+      <nav class="header__nav">
+        <a href="rooms.html" class="header__nav-link">Rooms</a>
+        <a href="about.html" class="header__nav-link">About</a>
+        <a href="services.html" class="header__nav-link">Services</a>
+        <a href="contact.html" class="header__nav-link header__nav-link--active">Contact</a>
+      </nav>
+
+      <a href="contact.html#booking" class="btn btn--primary btn--sm header__cta">Book Now</a>
+
+      <div class="header__burger" aria-label="Menu" role="button" tabindex="0">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </div>
+    </div>
+
+    <nav class="header__mobile-nav">
+      <a href="rooms.html" class="header__mobile-nav-link">Rooms</a>
+      <a href="about.html" class="header__mobile-nav-link">About</a>
+      <a href="services.html" class="header__mobile-nav-link">Services</a>
+      <a href="contact.html" class="header__mobile-nav-link">Contact</a>
+      <a href="contact.html#booking" class="btn btn--primary btn--full" style="margin-top:1rem;">Book Now</a>
+    </nav>
+  </header>
+
+  <!-- ========== PAGE BANNER ========== -->
+  <section class="page-banner">
+    <div class="page-banner__bg" style="background-image: url('assets/img/about-4.jpg');"></div>
+    <div class="container">
+      <h1 class="page-banner__title">Contact Us</h1>
+      <div class="page-banner__breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Contact</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT CARDS ========== -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="contact-grid reveal-stagger">
+        <div class="contact-card">
+          <div class="contact-card__icon">◆</div>
+          <h3 class="contact-card__title">Address</h3>
+          <p class="contact-card__text">123 Grand Avenue<br>New York, NY 10001<br>United States</p>
+          <a href="#" class="contact-card__link">Get Directions</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card__icon">◆</div>
+          <h3 class="contact-card__title">Phone</h3>
+          <p class="contact-card__text">Reservations: +1 (212) 555-1927<br>Concierge: +1 (212) 555-1928<br>Fax: +1 (212) 555-1929</p>
+          <a href="tel:+12125551927" class="contact-card__link">Call Now</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card__icon">◆</div>
+          <h3 class="contact-card__title">Email</h3>
+          <p class="contact-card__text">Reservations: reservations@grandehotel.com<br>Events: events@grandehotel.com<br>General: info@grandehotel.com</p>
+          <a href="mailto:reservations@grandehotel.com" class="contact-card__link">Send Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BOOKING INQUIRY FORM ========== -->
+  <section class="section section--white" id="booking">
+    <div class="container">
+      <div class="section-header section-header--center reveal">
+        <span class="section-header__subtitle">Reservations</span>
+        <h2 class="section-header__title">Make a Booking Inquiry</h2>
+        <div class="gold-divider"></div>
+        <p class="section-header__text">Complete the form below and our reservations team will respond within 24 hours.</p>
+      </div>
+
+      <div class="booking-form reveal">
+        <form data-form="contact">
+          <div class="booking-form__grid">
+            <div class="form-group">
+              <label class="form-group__label" for="contact-name">Full Name *</label>
+              <input class="form-group__input" type="text" id="contact-name" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-group__label" for="contact-email">Email *</label>
+              <input class="form-group__input" type="email" id="contact-email" name="email" placeholder="your@email.com" required>
+            </div>
+          </div>
+
+          <div class="booking-form__grid">
+            <div class="form-group">
+              <label class="form-group__label" for="contact-phone">Phone Number</label>
+              <input class="form-group__input" type="tel" id="contact-phone" name="phone" placeholder="+1 (555) 000-0000">
+            </div>
+            <div class="form-group">
+              <label class="form-group__label" for="contact-guests">Number of Guests</label>
+              <select class="form-group__select" id="contact-guests" name="guests">
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5+">5+ Guests</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="booking-form__grid">
+            <div class="form-group">
+              <label class="form-group__label" for="contact-checkin">Check-In Date</label>
+              <input class="form-group__input" type="date" id="contact-checkin" name="checkin">
+            </div>
+            <div class="form-group">
+              <label class="form-group__label" for="contact-checkout">Check-Out Date</label>
+              <input class="form-group__input" type="date" id="contact-checkout" name="checkout">
+            </div>
+          </div>
+
+          <div class="booking-form__grid">
+            <div class="form-group">
+              <label class="form-group__label" for="contact-room">Room Preference</label>
+              <select class="form-group__select" id="contact-room" name="room">
+                <option value="">No preference</option>
+                <option value="deluxe-king">Deluxe King Room</option>
+                <option value="executive-suite">Executive Suite</option>
+                <option value="presidential-suite">Presidential Suite</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-group__label" for="contact-occasion">Special Occasion</label>
+              <select class="form-group__select" id="contact-occasion" name="occasion">
+                <option value="">None</option>
+                <option value="anniversary">Anniversary</option>
+                <option value="birthday">Birthday</option>
+                <option value="honeymoon">Honeymoon</option>
+                <option value="corporate">Corporate</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="booking-form__grid booking-form__grid--full">
+            <div class="form-group">
+              <label class="form-group__label" for="contact-message">Special Requests</label>
+              <textarea class="form-group__input" id="contact-message" name="message" placeholder="Any special requirements or requests..." rows="5"></textarea>
+            </div>
+          </div>
+
+          <div class="booking-form__submit">
+            <button type="submit" class="btn btn--primary btn--lg">Submit Inquiry</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MAP + HOURS ========== -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="about-content">
+        <div class="reveal reveal--left">
+          <div class="map-placeholder">
+            <div class="map-placeholder__content">
+              <div class="map-placeholder__icon">◆</div>
+              <p class="map-placeholder__text">123 Grand Avenue, New York, NY 10001</p>
+              <p style="margin-top: 0.5rem; font-size: 0.875rem; color: var(--gray-400);">Interactive map would load here</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal--right">
+          <span class="section-header__subtitle">Hours</span>
+          <h3 style="margin-bottom: var(--space-xl);">Hotel Hours</h3>
+
+          <div class="hours-table">
+            <div class="hours-table__row">
+              <span class="hours-table__day">Front Desk</span>
+              <span class="hours-table__time">24 Hours</span>
+            </div>
+            <div class="hours-table__row">
+              <span class="hours-table__day">Check-In</span>
+              <span class="hours-table__time">3:00 PM</span>
+            </div>
+            <div class="hours-table__row">
+              <span class="hours-table__day">Check-Out</span>
+              <span class="hours-table__time">12:00 PM</span>
+            </div>
+            <div class="hours-table__row">
+              <span class="hours-table__day">The Ashford Room</span>
+              <span class="hours-table__time">6:00 AM - 11:00 PM</span>
+            </div>
+            <div class="hours-table__row">
+              <span class="hours-table__day">Rooftop Terrace</span>
+              <span class="hours-table__time">11:00 AM - 1:00 AM</span>
+            </div>
+            <div class="hours-table__row">
+              <span class="hours-table__day">Spa & Wellness</span>
+              <span class="hours-table__time">7:00 AM - 10:00 PM</span>
+            </div>
+            <div class="hours-table__row">
+              <span class="hours-table__day">Fitness Center</span>
+              <span class="hours-table__time">Open 24 Hours</span>
+            </div>
+            <div class="hours-table__row">
+              <span class="hours-table__day">Concierge</span>
+              <span class="hours-table__time">6:00 AM - 12:00 AM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="cta-section__title reveal">Your Journey Begins Here</h2>
+      <p class="cta-section__text reveal">Whether you are planning a romantic getaway, a family vacation, or a business trip, we are here to make it extraordinary.</p>
+      <div class="cta-section__actions reveal">
+        <a href="contact.html#booking" class="btn btn--primary btn--lg">Book Your Stay</a>
+        <a href="tel:+12125551927" class="btn btn--secondary btn--lg">Call Us Directly</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">
+            <span class="header__brand-icon">G</span>
+            GRANDEHOTEL
+          </div>
+          <p class="footer__desc">Where every stay becomes a story. Experience luxury hospitality refined over nearly a century of excellence.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">ig</a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">tw</a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Quick Links</h4>
+          <div class="footer__links">
+            <a href="rooms.html" class="footer__link">Rooms & Suites</a>
+            <a href="about.html" class="footer__link">Our Heritage</a>
+            <a href="services.html" class="footer__link">Services</a>
+            <a href="contact.html" class="footer__link">Contact Us</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Services</h4>
+          <div class="footer__links">
+            <a href="services.html" class="footer__link">Spa & Wellness</a>
+            <a href="services.html" class="footer__link">Fine Dining</a>
+            <a href="services.html" class="footer__link">Private Events</a>
+            <a href="services.html" class="footer__link">Concierge</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Contact</h4>
+          <div class="footer__links">
+            <span class="footer__link">123 Grand Avenue</span>
+            <span class="footer__link">New York, NY 10001</span>
+            <a href="tel:+12125551927" class="footer__link">+1 (212) 555-1927</a>
+            <a href="mailto:reservations@grandehotel.com" class="footer__link">reservations@grandehotel.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Grandehotel. All rights reserved.</span>
+        <span>Designed with elegance in mind.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

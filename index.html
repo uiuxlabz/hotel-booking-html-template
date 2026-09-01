@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sable Cove — Boutique Coastal Hotel</title>
+  <meta name="description" content="Sable Cove is a boutique coastal hotel on Driftwood Bay — 18 sea-view rooms, a beachfront terrace, tidal-wellness spa and tasting menus from the tide kitchen.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e3a40'/%3E%3Cpath d='M32 44c-9 0-15-5.4-15-12.5C17 24.2 32 10 32 10s15 14.2 15 21.5C47 38.6 41 44 32 44z' fill='%23e8b04b'/%3E%3Cpath d='M32 38c-5.4 0-9-3-9-7.2 0-4.4 9-12 9-12s9 7.6 9 12c0 4.2-3.6 7.2-9 7.2z' fill='%23f6f1e7'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <p class="topbar-item"><span class="topbar-icon">☀</span> Driftwood Bay, 14º 32' N — 61º 12' W</p>
+      <p class="topbar-item topbar-mid">Open all year · Check-in from 2 pm</p>
+      <p class="topbar-item topbar-end">
+        <a href="tel:+18005550182">+1 (800) 555-0182</a>
+        <a href="mailto:stay@sablecove.example">stay@sablecove.example</a>
+      </p>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Sable<span>Cove</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav class="nav-links" id="site-nav" aria-label="Primary">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="room.html" class="nav-link">Rooms</a>
+        <a href="service.html" class="nav-link">Experiences</a>
+        <a href="team.html" class="nav-link">Our People</a>
+        <a href="testimonial.html" class="nav-link">Reviews</a>
+        <a href="blog.html" class="nav-link">Journal</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="booking.html" class="nav-cta">Book a Stay</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="assets/img/carousel-1.jpg" alt="">
+        <img src="assets/img/carousel-2.jpg" alt="" class="active">
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="hero-eyebrow">A boutique hideaway on Driftwood Bay</p>
+        <h1 class="hero-title">Where the tide sets the rhythm <em>and the day follows.</em></h1>
+        <p class="hero-sub">Eighteen sea-view rooms, a beachfront terrace, a tidal-wellness spa — and not a single alarm clock.</p>
+        <div class="hero-actions">
+          <a href="booking.html" class="btn btn-primary">Reserve your room</a>
+          <a href="room.html" class="btn btn-ghost">Explore the rooms</a>
+        </div>
+        <div class="hero-meta">
+          <span><strong>18</strong> sea-view rooms</span>
+          <span><strong>2 min</strong> from the sand</span>
+          <span><strong>4.9</strong> / 5 guest rating</span>
+        </div>
+      </div>
+      <div class="checkin-wrap">
+        <div class="container">
+          <form class="checkin-bar" data-form novalidate>
+            <div class="checkin-field">
+              <label for="ck-in">Arrival</label>
+              <input id="ck-in" type="date" name="arrival" required>
+            </div>
+            <div class="checkin-field">
+              <label for="ck-out">Departure</label>
+              <input id="ck-out" type="date" name="departure" required>
+            </div>
+            <div class="checkin-field">
+              <label for="ck-guests">Guests</label>
+              <select id="ck-guests" name="guests">
+                <option value="1">1 guest</option>
+                <option value="2" selected>2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4+ guests</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary checkin-submit">Check availability</button>
+            <p class="form-msg form-ok">Good news — those dates are open. Our team will confirm within the hour.</p>
+            <p class="form-msg form-err">Please choose your arrival and departure dates.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="usp-strip reveal">
+          <div class="usp">
+            <span class="usp-num">01</span>
+            <h3>Beachfront terrace</h3>
+            <p>Sun loungers, cold towels and a bar that never closes before sunset.</p>
+          </div>
+          <div class="usp">
+            <span class="usp-num">02</span>
+            <h3>Tide kitchen</h3>
+            <p>Line-caught and garden-grown, on the table within hours of landing.</p>
+          </div>
+          <div class="usp">
+            <span class="usp-num">03</span>
+            <h3>Stay &amp; surf</h3>
+            <p>Free boards, lessons at dawn and a reliable little point break out front.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream">
+      <div class="container split">
+        <div class="split-media reveal">
+          <img src="assets/img/about-1.jpg" alt="The Sable Cove lobby with woven rattan seating and sea-glass lamps" loading="lazy">
+          <span class="exp-badge">Est. 1987</span>
+        </div>
+        <div class="split-copy reveal">
+          <p class="eyebrow">A family inn, grown slow</p>
+          <h2 class="section-title">Forty years of hosting — <em>still hand-written guest books.</em></h2>
+          <p>What began as a four-room guesthouse above a fisherman's shed is now a full boutique hotel — run by the same family, at the same unhurried pace. Nothing about Sable Cove is chain-standard, and we intend to keep it that way.</p>
+          <ul class="check-list">
+            <li>Refurbished in 2024 — original beams kept, comfort added</li>
+            <li>Rates include breakfast, beach bikes and the spa pool</li>
+            <li>Low-season weeks are quieter, cooler and kinder to the wallet</li>
+          </ul>
+          <a href="about.html" class="btn btn-outline">Read our story</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Rooms &amp; suites</p>
+          <h2 class="section-title">Pick your view.</h2>
+          <p class="section-sub">Every room faces the water. The only real question is how close you want to be.</p>
+        </div>
+        <div class="room-grid">
+          <article class="room-card reveal">
+            <div class="room-media">
+              <img src="assets/img/room-1.jpg" alt="The Dune Room with a king bed, linen curtains and a sea-facing balcony" loading="lazy">
+              <span class="room-tag">Most loved</span>
+            </div>
+            <div class="room-body">
+              <div class="room-head">
+                <h3>The Dune Room</h3>
+                <span class="room-price">from $210<span>/ night</span></span>
+              </div>
+              <p>King bed, balcony over the dunes, walk-in rain shower. Sleeps two.</p>
+              <div class="room-foot">
+                <span class="room-fac">28 m²</span>
+                <span class="room-fac">Balcony</span>
+                <span class="room-fac">Breakfast incl.</span>
+                <a href="booking.html" class="room-link">Book →</a>
+              </div>
+            </div>
+          </article>
+          <article class="room-card reveal">
+            <div class="room-media">
+              <img src="assets/img/room-2.jpg" alt="The Tide Suite with a freestanding bath and a wide sea-view window" loading="lazy">
+              <span class="room-tag">Sea view</span>
+            </div>
+            <div class="room-body">
+              <div class="room-head">
+                <h3>The Tide Suite</h3>
+                <span class="room-price">from $340<span>/ night</span></span>
+              </div>
+              <p>Separate living room, freestanding bath at the window, four-poster bed.</p>
+              <div class="room-foot">
+                <span class="room-fac">48 m²</span>
+                <span class="room-fac">Sea bath</span>
+                <span class="room-fac">Breakfast incl.</span>
+                <a href="booking.html" class="room-link">Book →</a>
+              </div>
+            </div>
+          </article>
+          <article class="room-card reveal">
+            <div class="room-media">
+              <img src="assets/img/room-3.jpg" alt="The Lighthouse House, a garden cottage with its own fire pit" loading="lazy">
+              <span class="room-tag">Self-catered</span>
+            </div>
+            <div class="room-body">
+              <div class="room-head">
+                <h3>The Lighthouse House</h3>
+                <span class="room-price">from $270<span>/ night</span></span>
+              </div>
+              <p>Our garden cottage — kitchenette, fire pit and a hammock under the palms.</p>
+              <div class="room-foot">
+                <span class="room-fac">38 m²</span>
+                <span class="room-fac">Garden</span>
+                <span class="room-fac">Kitchenette</span>
+                <a href="booking.html" class="room-link">Book →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="section-cta reveal">
+          <a href="room.html" class="btn btn-outline">See all rooms &amp; suites</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-head light reveal">
+          <p class="eyebrow">Experiences</p>
+          <h2 class="section-title">Stay is the start — <em>the bay is the rest.</em></h2>
+          <p class="section-sub">Guided, genuine and unhurried. Led by people who grew up on this water.</p>
+        </div>
+        <div class="exp-grid">
+          <article class="exp-card reveal">
+            <span class="exp-icon" aria-hidden="true">🌊</span>
+            <h3>Dawn surf lesson</h3>
+            <p>Boards, wet suits and a patient local coach. Flat water most mornings — perfect for first-timers.</p>
+          </article>
+          <article class="exp-card reveal">
+            <span class="exp-icon" aria-hidden="true">🪿</span>
+            <h3>Kelp forest snorkel</h3>
+            <p>Mask, fins and a marine guide to the clear side of the bay. Turtles are frequent guests.</p>
+          </article>
+          <article class="exp-card reveal">
+            <span class="exp-icon" aria-hidden="true">🍤</span>
+            <h3>Kitchen table dinner</h3>
+            <p>Ten seats, one long table, whatever the catch was this morning. Book the night before.</p>
+          </article>
+          <article class="exp-card reveal">
+            <span class="exp-icon" aria-hidden="true">🧖</span>
+            <h3>Tidal wellness</h3>
+            <p>Salt-pool mornings, sunset yoga on the terrace, and massages timed to the tide.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split split-rev">
+        <div class="split-media reveal">
+          <img src="assets/img/video.jpg" alt="Guests toasting on the Sable Cove beachfront terrace at golden hour" loading="lazy">
+          <span class="play-btn" aria-hidden="true">&#9654;</span>
+        </div>
+        <div class="split-copy reveal">
+          <p class="eyebrow">The hospitality band</p>
+          <h2 class="section-title">A small crew, <em>a very long memory.</em></h2>
+          <p>Most of our team have been here a decade or more. They know your name by the second morning, your coffee by the third, and the best table for tonight's sunset without being asked.</p>
+          <ul class="check-list">
+            <li>24-hour front desk — night owls welcome</li>
+            <li>Complimentary airport pickup, twice daily</li>
+            <li>Laundry, bikes, boards and binoculars on loan</li>
+          </ul>
+          <a href="team.html" class="btn btn-outline">Meet the crew</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Guest book</p>
+          <h2 class="section-title">They came for the view, <em>stayed for the welcome.</em></h2>
+        </div>
+        <div class="tst-grid">
+          <article class="tst-card reveal">
+            <div class="tst-head">
+              <img src="assets/img/testimonial-1.jpg" alt="" class="tst-avatar" loading="lazy">
+              <div>
+                <h3>Maya &amp; Jonah</h3>
+                <span class="tst-stars">★★★★★</span>
+              </div>
+            </div>
+            <p>"The staff remembered our names — and our order — by day two. We extended twice and still didn't want to leave."</p>
+          </article>
+          <article class="tst-card reveal">
+            <div class="tst-head">
+              <img src="assets/img/testimonial-2.jpg" alt="" class="tst-avatar" loading="lazy">
+              <div>
+                <h3>Daniel Reyes</h3>
+                <span class="tst-stars">★★★★★</span>
+              </div>
+            </div>
+            <p>"The dawn surf lesson was worth the whole trip. Patient coaches, warm water, and coffee waiting when we came in."</p>
+          </article>
+          <article class="tst-card reveal">
+            <div class="tst-head">
+              <img src="assets/img/testimonial-3.jpg" alt="" class="tst-avatar" loading="lazy">
+              <div>
+                <h3>The Okafor Family</h3>
+                <span class="tst-stars">★★★★★</span>
+              </div>
+            </div>
+            <p>"Four kids, zero stress. The kitchen table dinner became the favourite memory of our whole holiday."</p>
+          </article>
+        </div>
+        <div class="section-cta reveal">
+          <a href="testimonial.html" class="btn btn-outline">Read more reviews</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">The Sable journal</p>
+          <h2 class="section-title">Notes from the bay.</h2>
+        </div>
+        <div class="blog-grid">
+          <article class="post-card reveal">
+            <img src="assets/img/carousel-2.jpg" alt="Low tide at Driftwood Bay, late afternoon" loading="lazy">
+            <div class="post-body">
+              <span class="post-meta">Field note · April 2026</span>
+              <h3><a href="blog.html">When the tide goes out — a guide to low-water walks</a></h3>
+              <p>The best time to see the bay is the hour nobody else is out.</p>
+              <a href="blog.html" class="post-link">Read the note →</a>
+            </div>
+          </article>
+          <article class="post-card reveal">
+            <img src="assets/img/carousel-1.jpg" alt="The Sable Cove terrace at dusk, lanterns lit" loading="lazy">
+            <div class="post-body">
+              <span class="post-meta">Kitchen diary · March 2026</span>
+              <h3><a href="blog.html">What the tide kitchen does with the morning catch</a></h3>
+              <p>A short, honest recipe from the stove at Sable Cove.</p>
+              <a href="blog.html" class="post-link">Read the note →</a>
+            </div>
+          </article>
+          <article class="post-card reveal">
+            <img src="assets/img/room-2.jpg" alt="The Tide Suite window seat overlooking the bay" loading="lazy">
+            <div class="post-body">
+              <span class="post-meta">Housekeeping · February 2026</span>
+              <h3><a href="blog.html">Why every Sable room has a window seat</a></h3>
+              <p>On the small decisions that make a room feel like a retreat.</p>
+              <a href="blog.html" class="post-link">Read the note →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-inner reveal">
+        <p class="eyebrow">The bay is waiting</p>
+        <h2 class="cta-title">Two minutes from the sand, <em>a world from the usual.</em></h2>
+        <p class="cta-sub">Rooms are few and the season fills fast. Check our live availability, or write to us with a date in mind.</p>
+        <div class="cta-actions">
+          <a href="booking.html" class="btn btn-accent">Check availability</a>
+          <a href="contact.html" class="btn btn-ghost-dark">Ask us anything</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="brand footer-brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">Sable<span>Cove</span></span>
+        </a>
+        <p>Boutique hotel &amp; coastal kitchen on Driftwood Bay. Eighteen rooms, one very long welcome.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+          <a href="https://tripadvisor.com" target="_blank" rel="noopener" aria-label="Tripadvisor">TA</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">About Sable Cove</a></li>
+          <li><a href="room.html">Rooms &amp; suites</a></li>
+          <li><a href="service.html">Experiences</a></li>
+          <li><a href="team.html">Our people</a></li>
+          <li><a href="blog.html">Journal</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Guests</h3>
+        <ul class="footer-links">
+          <li><a href="booking.html">Book a stay</a></li>
+          <li><a href="testimonial.html">Guest reviews</a></li>
+          <li><a href="contact.html">Contact &amp; directions</a></li>
+          <li><a href="404.html">Resort map</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Find us</h3>
+        <ul class="footer-links footer-contact">
+          <li>1 Driftwood Bay Road, Sable, SB 1029</li>
+          <li><a href="tel:+18005550182">+1 (800) 555-0182</a></li>
+          <li><a href="mailto:stay@sablecove.example">stay@sablecove.example</a></li>
+        </ul>
+        <form class="newsletter" data-form novalidate>
+          <label for="nl-email" class="sr-only">Email for the tide letter</label>
+          <input id="nl-email" type="email" name="email" placeholder="Get the tide letter" required>
+          <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          <p class="form-msg form-ok">Welcome to the tide letter — first one this Friday.</p>
+          <p class="form-msg form-err">Please enter a valid email address.</p>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span data-year>2026</span> Sable Cove Hotel. All rights reserved.</p>
+        <p>Designed with care on the coast.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&#8593;</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
